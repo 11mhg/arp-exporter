@@ -1,0 +1,19 @@
+# Binaries for programs
+bin/arp-viz
+*.exe
+*.bin
+
+# Compiled object files
+*.o
+*.a
+*.so
+
+# Vendor directory
+vendor/
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
