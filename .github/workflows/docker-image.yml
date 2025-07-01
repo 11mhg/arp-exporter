@@ -30,7 +30,4 @@ jobs:
         file: ./Dockerfile
         platforms: inux/arm64,linux/amd64
         push: true
-        tags:
-          - ghcr.io/11mhg/arp-exporter:${{ steps.date.outputs.date }}
-          - ghcr.io/11mhg/arp-exporter:${{ github.sha }}
-          - ghcr.io/11mhg/arp-exporter:latest
+        tags: ghcr.io/11mhg/arp-exporter:${{ steps.date.outputs.date }}, ghcr.io/11mhg/arp-exporter:${{ github.sha }}, ghcr.io/11mhg/arp-exporter:latest
