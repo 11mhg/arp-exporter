@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/11mhg/arp-viz/internal/monitoring"
+	"github.com/11mhg/arp-exporter/internal/monitoring"
 	"github.com/google/gopacket"
 	"github.com/google/gopacket/layers"
 	"github.com/prometheus/client_golang/prometheus/promhttp"

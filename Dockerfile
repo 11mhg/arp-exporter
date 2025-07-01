@@ -11,7 +11,7 @@ RUN go mod download
 
 COPY . .
 
-RUN go build -o /usr/local/bin/arp-viz ./cmd/arp-viz/main.go
+RUN go build -o /usr/local/bin/arp-exporter ./cmd/arp-exporter/main.go
 
 FROM debian:bookworm
 
@@ -21,9 +21,9 @@ RUN apt-get update && \
 
 WORKDIR /
 
-COPY --from=builder /usr/local/bin/arp-viz /usr/local/bin/arp-viz
+COPY --from=builder /usr/local/bin/arp-exporter /usr/local/bin/arp-exporter
 
 EXPOSE 8080
 
-ENTRYPOINT ["/usr/local/bin/arp-viz"]
+ENTRYPOINT ["/usr/local/bin/arp-exporter"]
 

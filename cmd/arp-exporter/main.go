@@ -7,8 +7,8 @@ import (
 	"os/signal"
 	"sync"
 
-	"github.com/11mhg/arp-viz/internal/monitoring"
-	"github.com/11mhg/arp-viz/internal/server"
+	"github.com/11mhg/arp-exporter/internal/monitoring"
+	"github.com/11mhg/arp-exporter/internal/server"
 	"github.com/urfave/cli/v3"
 )
 
@@ -51,7 +51,7 @@ func run_solution(cliCtx context.Context, cmd *cli.Command) error {
 
 func main() {
 	cmd := &cli.Command{
-		Name:   "arp-viz",
+		Name:   "arp-exporter",
 		Usage:  "Run a server to export arp metrics and to run gARPs.",
 		Action: run_solution,
 		Flags: []cli.Flag{
