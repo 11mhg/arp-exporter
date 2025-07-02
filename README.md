@@ -5,5 +5,5 @@ I got tired of having to diagnose arp issues post-hoc. I figured if folks are ex
 
 # gARP
 
-The server is also able to gratuitously ARP for a particular IP when the target ip matches the nodes ip.... This forces upstream gateways (*cough*) to update their arp cache.
+The server is also able to gratuitously ARP for a particular IP when the target ip matches the nodes ip.... This forces all nodes on L2 to update their arp cache entry for this IP.
 
